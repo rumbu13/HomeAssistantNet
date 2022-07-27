@@ -56,7 +56,7 @@ public class MainWorker : BackgroundService
             => _logger.LogWarning("Connecting, attempt no. {attempt}", args.Attempt);
 
         _haWsClient.EventReceived += (sender, args)
-            => args.Event.EventType Interlocked.Increment(ref messageCount);
+            => Interlocked.Increment(ref messageCount);
 
         _haWsClient.Start(clientOptions);
         _haRestClient.Start(restOptions);
