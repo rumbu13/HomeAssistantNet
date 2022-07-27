@@ -1,8 +1,6 @@
-﻿using HomeAssistantNet.Client;
+﻿namespace HomeAssistantNet.Client.Internal;
 
-namespace HomeAssistantNet.Client.Internal;
-
-internal sealed record HaUnsubcribeEvents : HaWsCommand
+internal sealed class HaUnsubcribeEvents : HaCommand
 {
     public HaUnsubcribeEvents(int subscription)
         : base("unsubscribe_events")

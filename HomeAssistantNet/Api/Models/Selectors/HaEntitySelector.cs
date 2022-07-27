@@ -1,4 +1,4 @@
-﻿using HomeAssistantNet.Helpers;
+﻿using HomeAssistantNet.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -11,9 +11,9 @@ public sealed record HaEntitySelector
 
     [JsonPropertyName("domain")]
     [JsonConverter(typeof(JsonOneOrManyConverter<string>))]
-    public IReadOnlyCollection<string>? Domains { get; init; }
+    public string[]? Domains { get; init; }
 
-    public IReadOnlyCollection<string>? ExcludeEntities { get; init; }
-    public IReadOnlyCollection<string>? IncludeEntities { get; init; }
+    public string[]? ExcludeEntities { get; init; }
+    public string[]? IncludeEntities { get; init; }
     public bool? Multiple { get; init; }
 }

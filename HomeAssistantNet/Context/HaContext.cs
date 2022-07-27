@@ -22,12 +22,12 @@ public class HaContext : IHaContext, IDisposable
 
     List<ICache> caches = new List<ICache>();
 
-    readonly IHaWsClient haWsClient;
+    readonly IHaClient haWsClient;
 
     bool disposed;
 
 
-    public HaContext(IHaWsClient haWsClient)
+    public HaContext(IHaClient haWsClient)
     {
         this.haWsClient = haWsClient;
 

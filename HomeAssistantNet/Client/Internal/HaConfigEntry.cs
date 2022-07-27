@@ -1,8 +1,6 @@
-﻿using HomeAssistantNet.Client;
+﻿namespace HomeAssistantNet.Client.Internal;
 
-namespace HomeAssistantNet.Client.Internal;
-
-internal sealed record HaConfigEntryList : HaWsCommand
+internal sealed class HaConfigEntryList : HaCommand
 {
     public HaConfigEntryList(string? typeFilter, string? domain)
         : base("config_entries/get")

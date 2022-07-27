@@ -11,13 +11,13 @@ public abstract class CacheBase<T>: ICache<T> where T : class
 {
     protected readonly SemaphoreSlim semaphoreSlim = new(1);
     protected readonly CancellationTokenSource stopCancellation = new();
-    protected readonly IHaWsClient haWsClient;
+    protected readonly IHaClient haWsClient;
     protected bool disposed;
-    protected readonly TaskCompletionSource<bool> loaded = new();
+    protected readonly TaskCompletionSource<bool> loaded = new(TaskCreationOptions.RunContinuationsAsynchronously);
 
     public bool IsLoaded => loaded.Task.IsCompleted;
 
-    public CacheBase(IHaWsClient haWsClient)
+    public CacheBase(IHaClient haWsClient)
     {
         this.haWsClient = haWsClient;
 
@@ -29,9 +29,9 @@ public abstract class CacheBase<T>: ICache<T> where T : class
         haWsClient.EventReceived += HaWsClient_EventReceived;
     }
 
-    protected abstract void HaWsClient_EventReceived(object? sender, HaWsEventEventArgs e);
+    protected abstract void HaWsClient_EventReceived(object? sender, HaEventEventArgs e);
 
-    protected virtual void HaWsClient_Connected(object? sender, HaWsConnectedEventArgs e)
+    protected virtual void HaWsClient_Connected(object? sender, HaConnectedEventArgs e)
     {
         _ = RefreshAsync();
     }

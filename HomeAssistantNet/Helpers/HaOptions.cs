@@ -1,6 +1,4 @@
-﻿using HomeAssistantNet.Helpers;
-using System.Globalization;
-using System.Text;
+﻿using HomeAssistantNet.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -18,27 +16,6 @@ namespace HomeAssistantNet
                 }, true);
 
         public static JsonSerializerOptions DefaultJsonSerializerOptions
-            => _haDefaultJsonSerializerOptions.Value;
-
-        public static string Prettify(this string str)
-        {
-            var build = new StringBuilder(str.Length);
-            bool nextIsUpper = false;
-            bool isFirstCharacter = true;
-            foreach (char c in str)
-            {
-                if (!Char.IsLetterOrDigit(c))
-                {
-                    nextIsUpper = true;
-                    continue;
-                }
-
-                build.Append(nextIsUpper || isFirstCharacter ? char.ToUpper(c, CultureInfo.InvariantCulture) : c);
-                nextIsUpper = false;
-                isFirstCharacter = false;
-            }
-
-            return build.ToString();
-        }
+            => _haDefaultJsonSerializerOptions.Value;       
     }
 }

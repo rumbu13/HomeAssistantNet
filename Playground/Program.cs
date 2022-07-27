@@ -14,19 +14,21 @@ Console.WriteLine("Hello, World!");
 
 ////client.ReceiveAsync()
 
-var options = new HaWsClientOptionsBuilder()
+var options = new HaClientOptionsBuilder()
     .WithHost("ha")
     .WithConnectTimeout(TimeSpan.FromSeconds(30))
     .WithTimeout(TimeSpan.FromSeconds(30))
     .WithToken("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJiYzVmNDg2MmQzMzE0OWQ1YjBlY2M3M2IzN2Y1ODkxYiIsImlhdCI6MTY1NzkwMDYzOSwiZXhwIjoxOTczMjYwNjM5fQ.lChYKdH5cFMOJnfsL8yfQtwXoIhezODjL7nMfKEbwQ8").Build();//await client.CloseAsync(WebSocketCloseStatus.NormalClosure, "normal", CancellationToken.None);
 
 
-var client = new HaWsClient();
+var client = new HaClient();
 
 client.EventReceived += (sender, args)
     => Console.WriteLine($"Event: {args.Event.EventType}");
 
 client.Start(options);
+await client.WaitForConnectionAsync(true);
+Console.WriteLine(client.IsConnected ? "Connected" : "Disconnected");
 
 Console.ReadKey();
 client.Stop();

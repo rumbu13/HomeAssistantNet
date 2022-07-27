@@ -1,4 +1,4 @@
-﻿using HomeAssistantNet.Helpers;
+﻿using HomeAssistantNet.Json;
 using System.Text.Json.Serialization;
 
 namespace HomeAssistantNet.Api;
@@ -6,7 +6,7 @@ namespace HomeAssistantNet.Api;
 public sealed record HaSelectSelector
 {
     [JsonConverter(typeof(JsonHaSelectOptionsConverter))]
-    public IReadOnlyList<HaSelectOption>? Options { get; set; }
+    public HaSelectOption[]? Options { get; init; }
 
     public bool? Multiple { get; init; }
     public bool? CustomValue { get; init; }

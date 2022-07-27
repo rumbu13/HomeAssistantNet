@@ -6,8 +6,7 @@ IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) =>
     {
 
-        services.AddSingleton<IHaWsClient, HaWsClient>();
-        services.AddSingleton<IHaRestClient, HaRestClient>();
+        services.AddSingleton<IHaClient, HaClient>();
 
 
         services.AddHostedService<MainWorker>();

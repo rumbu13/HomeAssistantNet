@@ -10,15 +10,16 @@ namespace HomeAssistantNet.Context.Internal;
 public class Cache<T>: CacheBase<T> where T : class
 {
     Dictionary<string, T> items = new();
-    readonly Func<CancellationToken, Task<IReadOnlyList<T>?>> itemGetter;
+
+    readonly Func<CancellationToken, Task<T[]?>> itemGetter;
     readonly Func<T, string> keyGetter;
-    readonly Func<HaWsEventEventArgs, bool> trigger;
+    readonly Func<HaEventEventArgs, bool> trigger;
 
 
-    public Cache(IHaWsClient haWsClient, 
-        Func<CancellationToken, Task<IReadOnlyList<T>?>> itemGetter, 
+    public Cache(IHaClient haWsClient, 
+        Func<CancellationToken, Task<T[]?>> itemGetter, 
         Func<T, string> keyGetter,
-        Func<HaWsEventEventArgs, bool> trigger)
+        Func<HaEventEventArgs, bool> trigger)
         : base(haWsClient)
     {
         this.itemGetter = itemGetter;
@@ -27,7 +28,7 @@ public class Cache<T>: CacheBase<T> where T : class
 
     }
 
-    protected override void HaWsClient_EventReceived(object? sender, HaWsEventEventArgs e)
+    protected override void HaWsClient_EventReceived(object? sender, HaEventEventArgs e)
     {
         if (trigger(e))
             _ = RefreshAsync();

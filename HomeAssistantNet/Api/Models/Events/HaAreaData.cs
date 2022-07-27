@@ -6,7 +6,4 @@ public sealed record HaAreaData
 {
     public string? Action { get; init; }
     public string? AreaId { get; init; }
-
-   
-
 }

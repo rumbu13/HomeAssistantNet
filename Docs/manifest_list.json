@@ -1,0 +1,1207 @@
+{
+    "id": 20,
+    "type": "result",
+    "success": true,
+    "result": [{
+            "domain": "image",
+            "name": "Image",
+            "config_flow": false,
+            "documentation": "https://www.home-assistant.io/integrations/image",
+            "requirements": ["pillow==9.1.1"],
+            "dependencies": ["http"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "google_translate",
+            "name": "Google Translate Text-to-Speech",
+            "documentation": "https://www.home-assistant.io/integrations/google_translate",
+            "requirements": ["gTTS==2.2.4"],
+            "codeowners": [],
+            "iot_class": "cloud_push",
+            "loggers": ["gtts"],
+            "is_built_in": true
+        }, {
+            "domain": "my",
+            "name": "My Home Assistant",
+            "documentation": "https://www.home-assistant.io/integrations/my",
+            "dependencies": ["frontend"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "network",
+            "name": "Network Configuration",
+            "documentation": "https://www.home-assistant.io/integrations/network",
+            "requirements": ["ifaddr==0.1.7"],
+            "codeowners": ["@home-assistant/core"],
+            "dependencies": ["websocket_api"],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "automation",
+            "name": "Automation",
+            "documentation": "https://www.home-assistant.io/integrations/automation",
+            "dependencies": ["blueprint", "trace"],
+            "after_dependencies": ["device_automation", "webhook"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "proxmoxve",
+            "name": "Proxmox VE",
+            "documentation": "https://www.home-assistant.io/integrations/proxmoxve",
+            "codeowners": ["@jhollowe", "@Corbeno"],
+            "requirements": ["proxmoxer==1.3.1"],
+            "iot_class": "local_polling",
+            "loggers": ["proxmoxer"],
+            "is_built_in": true
+        }, {
+            "domain": "discord",
+            "name": "Discord",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/discord",
+            "requirements": ["nextcord==2.0.0a8"],
+            "codeowners": ["@tkdrob"],
+            "iot_class": "cloud_push",
+            "loggers": ["discord"],
+            "is_built_in": true
+        }, {
+            "domain": "input_text",
+            "integration_type": "helper",
+            "name": "Input Text",
+            "documentation": "https://www.home-assistant.io/integrations/input_text",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "scene",
+            "name": "Scenes",
+            "documentation": "https://www.home-assistant.io/integrations/scene",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "dnsip",
+            "name": "DNS IP",
+            "documentation": "https://www.home-assistant.io/integrations/dnsip",
+            "requirements": ["aiodns==3.0.0"],
+            "codeowners": ["@gjohansson-ST"],
+            "config_flow": true,
+            "iot_class": "cloud_polling",
+            "is_built_in": true
+        }, {
+            "domain": "garbage_collection",
+            "name": "Garbage Collection",
+            "version": "4.8.1",
+            "documentation": "https://github.com/bruxy70/Garbage-Collection/",
+            "issue_tracker": "https://github.com/bruxy70/Garbage-Collection/issues",
+            "iot_class": "calculated",
+            "integration_type": "helper",
+            "dependencies": [],
+            "config_flow": true,
+            "codeowners": ["@bruxy70"],
+            "requirements": ["python-dateutil>=2.8.2"],
+            "is_built_in": false
+        }, {
+            "domain": "gree",
+            "name": "Gree Climate",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/gree",
+            "requirements": ["greeclimate==1.2.0"],
+            "codeowners": ["@cmroche"],
+            "iot_class": "local_polling",
+            "loggers": ["greeclimate"],
+            "is_built_in": true
+        }, {
+            "domain": "tag",
+            "name": "Tags",
+            "documentation": "https://www.home-assistant.io/integrations/tag",
+            "codeowners": ["@balloob", "@dmulcahey"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "script",
+            "name": "Scripts",
+            "documentation": "https://www.home-assistant.io/integrations/script",
+            "dependencies": ["blueprint", "trace"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "template",
+            "name": "Template",
+            "documentation": "https://www.home-assistant.io/integrations/template",
+            "codeowners": ["@PhracturedBlue", "@tetienne", "@home-assistant/core"],
+            "quality_scale": "internal",
+            "after_dependencies": ["group"],
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "device_tracker",
+            "name": "Device Tracker",
+            "documentation": "https://www.home-assistant.io/integrations/device_tracker",
+            "dependencies": ["zone"],
+            "after_dependencies": [],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "rest_command",
+            "name": "RESTful Command",
+            "documentation": "https://www.home-assistant.io/integrations/rest_command",
+            "codeowners": [],
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "workday",
+            "name": "Workday",
+            "documentation": "https://www.home-assistant.io/integrations/workday",
+            "requirements": ["holidays==0.14.2"],
+            "codeowners": ["@fabaff"],
+            "quality_scale": "internal",
+            "iot_class": "local_polling",
+            "loggers": ["convertdate", "hijri_converter", "holidays", "korean_lunar_calendar"],
+            "is_built_in": true
+        }, {
+            "domain": "input_select",
+            "integration_type": "helper",
+            "name": "Input Select",
+            "documentation": "https://www.home-assistant.io/integrations/input_select",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "api",
+            "name": "Home Assistant API",
+            "documentation": "https://www.home-assistant.io/integrations/api",
+            "dependencies": ["http"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "stream",
+            "name": "Stream",
+            "documentation": "https://www.home-assistant.io/integrations/stream",
+            "requirements": ["PyTurboJPEG==1.6.6", "ha-av==10.0.0b4"],
+            "dependencies": ["http"],
+            "codeowners": ["@hunterjm", "@uvjustin", "@allenporter"],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "local_ip",
+            "name": "Local IP Address",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/local_ip",
+            "dependencies": ["network"],
+            "codeowners": ["@issacg"],
+            "iot_class": "local_polling",
+            "is_built_in": true
+        }, {
+            "domain": "trend",
+            "name": "Trend",
+            "documentation": "https://www.home-assistant.io/integrations/trend",
+            "requirements": ["numpy==1.23.0"],
+            "codeowners": [],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "cover",
+            "name": "Cover",
+            "documentation": "https://www.home-assistant.io/integrations/cover",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "codeowners": ["@ludeeus"],
+            "config_flow": true,
+            "dependencies": ["http", "websocket_api", "frontend", "persistent_notification", "lovelace"],
+            "documentation": "https://hacs.xyz/docs/configuration/start",
+            "domain": "hacs",
+            "iot_class": "cloud_polling",
+            "issue_tracker": "https://github.com/hacs/integration/issues",
+            "name": "HACS",
+            "requirements": ["aiogithubapi>=22.2.4"],
+            "version": "1.26.2",
+            "is_built_in": false
+        }, {
+            "domain": "utility_meter",
+            "integration_type": "helper",
+            "name": "Utility Meter",
+            "documentation": "https://www.home-assistant.io/integrations/utility_meter",
+            "requirements": ["croniter==1.0.6"],
+            "codeowners": ["@dgomes"],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "loggers": ["croniter"],
+            "config_flow": true,
+            "is_built_in": true
+        }, {
+            "domain": "device_automation",
+            "name": "Device Automation",
+            "documentation": "https://www.home-assistant.io/integrations/device_automation",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "edge_tts",
+            "name": "Microsoft Edge TTS",
+            "version": "0.0.1",
+            "documentation": "https://github.com/hasscc/hass-edge-tts",
+            "issue_tracker": "https://github.com/hasscc/hass-edge-tts/issues",
+            "requirements": ["edge-tts==4.0.3"],
+            "codeowners": [],
+            "iot_class": "cloud_polling",
+            "is_built_in": false
+        }, {
+            "domain": "webostv",
+            "name": "LG webOS Smart TV",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/webostv",
+            "requirements": ["aiowebostv==0.2.0"],
+            "codeowners": ["@bendavid", "@thecode"],
+            "ssdp": [{
+                    "st": "urn:lge-com:service:webos-second-screen:1"
+                }
+            ],
+            "quality_scale": "platinum",
+            "iot_class": "local_push",
+            "loggers": ["aiowebostv"],
+            "is_built_in": true
+        }, {
+            "domain": "homeassistant",
+            "name": "Home Assistant Core Integration",
+            "documentation": "https://www.home-assistant.io/integrations/homeassistant",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "xiaomi_miio",
+            "name": "Xiaomi Miio",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/xiaomi_miio",
+            "requirements": ["construct==2.10.56", "micloud==0.5", "python-miio==0.5.11"],
+            "codeowners": ["@rytilahti", "@syssi", "@starkillerOG", "@bieniu"],
+            "zeroconf": ["_miio._udp.local."],
+            "iot_class": "local_polling",
+            "loggers": ["micloud", "miio"],
+            "is_built_in": true
+        }, {
+            "domain": "update",
+            "name": "Update",
+            "documentation": "https://www.home-assistant.io/integrations/update",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "dlna_dms",
+            "name": "DLNA Digital Media Server",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/dlna_dms",
+            "requirements": ["async-upnp-client==0.31.2"],
+            "dependencies": ["ssdp"],
+            "after_dependencies": ["media_source"],
+            "ssdp": [{
+                    "deviceType": "urn:schemas-upnp-org:device:MediaServer:1",
+                    "st": "urn:schemas-upnp-org:device:MediaServer:1"
+                }, {
+                    "deviceType": "urn:schemas-upnp-org:device:MediaServer:2",
+                    "st": "urn:schemas-upnp-org:device:MediaServer:2"
+                }, {
+                    "deviceType": "urn:schemas-upnp-org:device:MediaServer:3",
+                    "st": "urn:schemas-upnp-org:device:MediaServer:3"
+                }, {
+                    "deviceType": "urn:schemas-upnp-org:device:MediaServer:4",
+                    "st": "urn:schemas-upnp-org:device:MediaServer:4"
+                }
+            ],
+            "codeowners": ["@chishm"],
+            "iot_class": "local_polling",
+            "quality_scale": "platinum",
+            "is_built_in": true
+        }, {
+            "domain": "config",
+            "name": "Configuration",
+            "documentation": "https://www.home-assistant.io/integrations/config",
+            "dependencies": ["http"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "energy",
+            "name": "Energy",
+            "documentation": "https://www.home-assistant.io/integrations/energy",
+            "codeowners": ["@home-assistant/core"],
+            "iot_class": "calculated",
+            "dependencies": ["websocket_api", "history", "recorder"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "fan",
+            "name": "Fan",
+            "documentation": "https://www.home-assistant.io/integrations/fan",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "switch_as_x",
+            "integration_type": "helper",
+            "name": "Switch as X",
+            "documentation": "https://www.home-assistant.io/integrations/switch_as_x",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "iot_class": "calculated",
+            "config_flow": true,
+            "is_built_in": true
+        }, {
+            "domain": "vacuum",
+            "name": "Vacuum",
+            "documentation": "https://www.home-assistant.io/integrations/vacuum",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "lock",
+            "name": "Lock",
+            "documentation": "https://www.home-assistant.io/integrations/lock",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "mqtt",
+            "name": "MQTT",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/mqtt",
+            "requirements": ["paho-mqtt==1.6.1"],
+            "dependencies": ["http"],
+            "codeowners": ["@emontnemery"],
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "google",
+            "name": "Google Calendars",
+            "config_flow": true,
+            "dependencies": ["application_credentials"],
+            "documentation": "https://www.home-assistant.io/integrations/calendar.google/",
+            "requirements": ["gcal-sync==0.10.0", "oauth2client==4.1.3"],
+            "codeowners": ["@allenporter"],
+            "iot_class": "cloud_polling",
+            "loggers": ["googleapiclient"],
+            "is_built_in": true
+        }, {
+            "domain": "snmp",
+            "name": "SNMP",
+            "documentation": "https://www.home-assistant.io/integrations/snmp",
+            "requirements": ["pysnmplib==5.0.15"],
+            "codeowners": [],
+            "iot_class": "local_polling",
+            "loggers": ["pyasn1", "pysmi", "pysnmp"],
+            "is_built_in": true
+        }, {
+            "domain": "nmap_tracker",
+            "name": "Nmap Tracker",
+            "documentation": "https://www.home-assistant.io/integrations/nmap_tracker",
+            "dependencies": ["network"],
+            "requirements": ["netmap==0.7.0.2", "getmac==0.8.2", "mac-vendor-lookup==0.1.11"],
+            "codeowners": [],
+            "iot_class": "local_polling",
+            "config_flow": true,
+            "loggers": ["nmap"],
+            "is_built_in": true
+        }, {
+            "domain": "blueprint",
+            "name": "Blueprint",
+            "documentation": "https://www.home-assistant.io/integrations/blueprint",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "notify",
+            "name": "Notifications",
+            "documentation": "https://www.home-assistant.io/integrations/notify",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "season",
+            "name": "Season",
+            "documentation": "https://www.home-assistant.io/integrations/season",
+            "requirements": ["ephem==4.1.2"],
+            "codeowners": ["@frenck"],
+            "quality_scale": "internal",
+            "iot_class": "local_polling",
+            "loggers": ["ephem"],
+            "config_flow": true,
+            "is_built_in": true
+        }, {
+            "domain": "illuminance",
+            "name": "Illuminance",
+            "version": "3.0.0",
+            "documentation": "https://github.com/pnbruckner/ha-illuminance/blob/master/README.md",
+            "issue_tracker": "https://github.com/pnbruckner/ha-illuminance/issues",
+            "requirements": [],
+            "dependencies": [],
+            "codeowners": ["@pnbruckner"],
+            "is_built_in": false
+        }, {
+            "domain": "met",
+            "name": "Meteorologisk institutt (Met.no)",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/met",
+            "requirements": ["pyMetno==0.9.0"],
+            "codeowners": ["@danielhiversen", "@thimic"],
+            "iot_class": "cloud_polling",
+            "loggers": ["metno"],
+            "is_built_in": true
+        }, {
+            "domain": "http",
+            "name": "HTTP",
+            "documentation": "https://www.home-assistant.io/integrations/http",
+            "requirements": ["aiohttp_cors==0.7.0"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "history",
+            "name": "History",
+            "documentation": "https://www.home-assistant.io/integrations/history",
+            "dependencies": ["http", "recorder"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "system_health",
+            "name": "System Health",
+            "documentation": "https://www.home-assistant.io/integrations/system_health",
+            "dependencies": ["http"],
+            "codeowners": [],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "persistent_notification",
+            "name": "Persistent Notification",
+            "documentation": "https://www.home-assistant.io/integrations/persistent_notification",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "ssdp",
+            "name": "Simple Service Discovery Protocol (SSDP)",
+            "documentation": "https://www.home-assistant.io/integrations/ssdp",
+            "requirements": ["async-upnp-client==0.31.2"],
+            "dependencies": ["network"],
+            "after_dependencies": ["zeroconf"],
+            "codeowners": [],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "loggers": ["async_upnp_client"],
+            "is_built_in": true
+        }, {
+            "domain": "moon",
+            "name": "Moon",
+            "documentation": "https://www.home-assistant.io/integrations/moon",
+            "codeowners": ["@fabaff", "@frenck"],
+            "quality_scale": "internal",
+            "iot_class": "local_polling",
+            "config_flow": true,
+            "is_built_in": true
+        }, {
+            "domain": "search",
+            "name": "Search",
+            "documentation": "https://www.home-assistant.io/integrations/search",
+            "dependencies": ["websocket_api"],
+            "after_dependencies": ["scene", "group", "automation", "script"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "zeroconf",
+            "name": "Zero-configuration networking (zeroconf)",
+            "documentation": "https://www.home-assistant.io/integrations/zeroconf",
+            "requirements": ["zeroconf==0.38.7"],
+            "dependencies": ["network", "api"],
+            "codeowners": ["@bdraco"],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "loggers": ["zeroconf"],
+            "is_built_in": true
+        }, {
+            "domain": "input_datetime",
+            "integration_type": "helper",
+            "name": "Input Datetime",
+            "documentation": "https://www.home-assistant.io/integrations/input_datetime",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "browser_mod",
+            "name": "Browser mod",
+            "documentation": "https://github.com/thomasloven/hass-browser_mod/blob/master/README.md",
+            "dependencies": ["websocket_api", "http", "frontend"],
+            "codeowners": [],
+            "requirements": [],
+            "version": "1.5.3",
+            "iot_class": "local_push",
+            "is_built_in": false
+        }, {
+            "domain": "tts",
+            "name": "Text-to-Speech (TTS)",
+            "documentation": "https://www.home-assistant.io/integrations/tts",
+            "requirements": ["mutagen==1.45.1"],
+            "dependencies": ["http"],
+            "after_dependencies": ["media_player"],
+            "codeowners": ["@pvizeli"],
+            "quality_scale": "internal",
+            "loggers": ["mutagen"],
+            "is_built_in": true
+        }, {
+            "domain": "webhook",
+            "name": "Webhook",
+            "documentation": "https://www.home-assistant.io/integrations/webhook",
+            "dependencies": ["http"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "usb",
+            "name": "USB Discovery",
+            "documentation": "https://www.home-assistant.io/integrations/usb",
+            "requirements": ["pyudev==0.22.0", "pyserial==3.5"],
+            "codeowners": ["@bdraco"],
+            "dependencies": ["websocket_api"],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "smartthinq_sensors",
+            "name": "SmartThinQ LGE Sensors",
+            "documentation": "https://github.com/ollo69/ha-smartthinq-sensors",
+            "issue_tracker": "https://github.com/ollo69/ha-smartthinq-sensors/issues",
+            "dependencies": [],
+            "codeowners": ["@ollo69"],
+            "requirements": ["pycountry>=20.7.3", "xmltodict>=0.12.0", "chardet>=4.0.0"],
+            "config_flow": true,
+            "iot_class": "cloud_polling",
+            "version": "0.23.3",
+            "is_built_in": false
+        }, {
+            "domain": "websocket_api",
+            "name": "Home Assistant WebSocket API",
+            "documentation": "https://www.home-assistant.io/integrations/websocket_api",
+            "dependencies": ["http"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "application_credentials",
+            "name": "Application Credentials",
+            "config_flow": false,
+            "documentation": "https://www.home-assistant.io/integrations/application_credentials",
+            "dependencies": ["auth", "websocket_api"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "map",
+            "name": "Map",
+            "documentation": "https://www.home-assistant.io/integrations/map",
+            "dependencies": ["frontend"],
+            "codeowners": [],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "onboarding",
+            "name": "Home Assistant Onboarding",
+            "documentation": "https://www.home-assistant.io/integrations/onboarding",
+            "after_dependencies": ["hassio"],
+            "dependencies": ["analytics", "auth", "http", "person"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "lovelace",
+            "name": "Dashboards",
+            "documentation": "https://www.home-assistant.io/integrations/lovelace",
+            "codeowners": ["@home-assistant/frontend"],
+            "is_built_in": true
+        }, {
+            "domain": "shelly",
+            "name": "Shelly",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/shelly",
+            "requirements": ["aioshelly==2.0.1"],
+            "zeroconf": [{
+                    "type": "_http._tcp.local.",
+                    "name": "shelly*"
+                }
+            ],
+            "codeowners": ["@balloob", "@bieniu", "@thecode", "@chemelli74"],
+            "iot_class": "local_push",
+            "loggers": ["aioshelly"],
+            "is_built_in": true
+        }, {
+            "domain": "media_player",
+            "name": "Media Player",
+            "documentation": "https://www.home-assistant.io/integrations/media_player",
+            "dependencies": ["http"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "button",
+            "name": "Button",
+            "documentation": "https://www.home-assistant.io/integrations/button",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "person",
+            "name": "Person",
+            "documentation": "https://www.home-assistant.io/integrations/person",
+            "dependencies": ["image"],
+            "after_dependencies": ["device_tracker"],
+            "codeowners": [],
+            "quality_scale": "internal",
+            "iot_class": "calculated",
+            "is_built_in": true
+        }, {
+            "domain": "recorder",
+            "name": "Recorder",
+            "documentation": "https://www.home-assistant.io/integrations/recorder",
+            "requirements": ["sqlalchemy==1.4.38", "fnvhash==0.1.0", "lru-dict==1.1.7"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "lg_netcast",
+            "name": "LG Netcast",
+            "documentation": "https://www.home-assistant.io/integrations/lg_netcast",
+            "requirements": ["pylgnetcast==0.3.7"],
+            "codeowners": ["@Drafteed"],
+            "iot_class": "local_polling",
+            "loggers": ["pylgnetcast"],
+            "is_built_in": true
+        }, {
+            "domain": "timer",
+            "name": "Timer",
+            "integration_type": "helper",
+            "documentation": "https://www.home-assistant.io/integrations/timer",
+            "codeowners": [],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "climate",
+            "name": "Climate",
+            "documentation": "https://www.home-assistant.io/integrations/climate",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "after_dependencies": ["integration", "utility_meter"],
+            "codeowners": ["@bramstroker"],
+            "dependencies": ["select"],
+            "documentation": "https://github.com/bramstroker/homeassistant-powercalc",
+            "domain": "powercalc",
+            "iot_class": "local_polling",
+            "issue_tracker": "https://github.com/bramstroker/homeassistant-powercalc/issues",
+            "name": "Powercalc",
+            "requirements": ["numpy>=1.21.1"],
+            "version": "v0.22.1",
+            "is_built_in": false
+        }, {
+            "domain": "sensor",
+            "name": "Sensor",
+            "documentation": "https://www.home-assistant.io/integrations/sensor",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "after_dependencies": ["recorder"],
+            "is_built_in": true
+        }, {
+            "domain": "ipp",
+            "name": "Internet Printing Protocol (IPP)",
+            "documentation": "https://www.home-assistant.io/integrations/ipp",
+            "requirements": ["pyipp==0.11.0"],
+            "codeowners": ["@ctalkington"],
+            "config_flow": true,
+            "quality_scale": "platinum",
+            "zeroconf": ["_ipps._tcp.local.", "_ipp._tcp.local."],
+            "iot_class": "local_polling",
+            "loggers": ["deepmerge", "pyipp"],
+            "is_built_in": true
+        }, {
+            "domain": "cloud",
+            "name": "Home Assistant Cloud",
+            "documentation": "https://www.home-assistant.io/integrations/cloud",
+            "requirements": ["hass-nabucasa==0.54.1"],
+            "dependencies": ["http", "webhook"],
+            "after_dependencies": ["google_assistant", "alexa"],
+            "codeowners": ["@home-assistant/cloud"],
+            "iot_class": "cloud_push",
+            "loggers": ["hass_nabucasa"],
+            "is_built_in": true
+        }, {
+            "domain": "calendar",
+            "name": "Calendar",
+            "documentation": "https://www.home-assistant.io/integrations/calendar",
+            "dependencies": ["http"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "siren",
+            "name": "Siren",
+            "documentation": "https://www.home-assistant.io/integrations/siren",
+            "codeowners": ["@home-assistant/core", "@raman325"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "media_source",
+            "name": "Media Source",
+            "documentation": "https://www.home-assistant.io/integrations/media_source",
+            "dependencies": ["http"],
+            "codeowners": ["@hunterjm"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "counter",
+            "name": "Counter",
+            "integration_type": "helper",
+            "documentation": "https://www.home-assistant.io/integrations/counter",
+            "codeowners": ["@fabaff"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "binary_sensor",
+            "name": "Binary Sensor",
+            "documentation": "https://www.home-assistant.io/integrations/binary_sensor",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "tod",
+            "integration_type": "helper",
+            "name": "Times of the Day",
+            "documentation": "https://www.home-assistant.io/integrations/tod",
+            "codeowners": [],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "config_flow": true,
+            "is_built_in": true
+        }, {
+            "domain": "logbook",
+            "name": "Logbook",
+            "documentation": "https://www.home-assistant.io/integrations/logbook",
+            "dependencies": ["frontend", "http", "recorder"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "input_boolean",
+            "integration_type": "helper",
+            "name": "Input Boolean",
+            "documentation": "https://www.home-assistant.io/integrations/input_boolean",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "home_connect",
+            "name": "Home Connect",
+            "documentation": "https://www.home-assistant.io/integrations/home_connect",
+            "dependencies": ["application_credentials"],
+            "codeowners": ["@DavidMStraub"],
+            "requirements": ["homeconnect==0.7.1"],
+            "config_flow": true,
+            "iot_class": "cloud_push",
+            "loggers": ["homeconnect"],
+            "is_built_in": true
+        }, {
+            "domain": "default_config",
+            "name": "Default Config",
+            "documentation": "https://www.home-assistant.io/integrations/default_config",
+            "dependencies": ["application_credentials", "automation", "cloud", "counter", "dhcp", "energy", "frontend", "history", "input_boolean", "input_button", "input_datetime", "input_number", "input_select", "input_text", "logbook", "map", "media_source", "mobile_app", "my", "network", "person", "scene", "script", "ssdp", "sun", "system_health", "tag", "timer", "usb", "webhook", "zeroconf", "zone"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "speedtestdotnet",
+            "name": "Speedtest.net",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/speedtestdotnet",
+            "requirements": ["speedtest-cli==2.1.3"],
+            "codeowners": ["@rohankapoorcom", "@engrbm87"],
+            "iot_class": "cloud_polling",
+            "is_built_in": true
+        }, {
+            "domain": "number",
+            "name": "Number",
+            "documentation": "https://www.home-assistant.io/integrations/number",
+            "codeowners": ["@home-assistant/core", "@Shulyaka"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "generic",
+            "name": "Generic Camera",
+            "config_flow": true,
+            "requirements": ["ha-av==10.0.0b4", "pillow==9.1.1"],
+            "documentation": "https://www.home-assistant.io/integrations/generic",
+            "codeowners": ["@davet2001"],
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "system_log",
+            "name": "System Log",
+            "documentation": "https://www.home-assistant.io/integrations/system_log",
+            "dependencies": [],
+            "codeowners": [],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "version",
+            "name": "Version",
+            "documentation": "https://www.home-assistant.io/integrations/version",
+            "requirements": ["pyhaversion==22.4.1"],
+            "codeowners": ["@ludeeus"],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "config_flow": true,
+            "loggers": ["pyhaversion"],
+            "is_built_in": true
+        }, {
+            "domain": "light",
+            "name": "Light",
+            "documentation": "https://www.home-assistant.io/integrations/light",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "shopping_list",
+            "name": "Shopping List",
+            "documentation": "https://www.home-assistant.io/integrations/shopping_list",
+            "dependencies": ["http"],
+            "codeowners": [],
+            "config_flow": true,
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "fontawesome",
+            "name": "Fontawesome icons",
+            "documentation": "https://github.com/thomasloven/hass-fontawesome",
+            "dependencies": ["frontend", "http"],
+            "codeowners": [],
+            "requirements": [],
+            "config_flow": true,
+            "version": "2.1.5",
+            "iot_class": "local_polling",
+            "is_built_in": false
+        }, {
+            "domain": "radio_browser",
+            "name": "Radio Browser",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/radio",
+            "requirements": ["radios==0.1.1"],
+            "codeowners": ["@frenck"],
+            "iot_class": "cloud_polling",
+            "is_built_in": true
+        }, {
+            "domain": "uptime",
+            "name": "Uptime",
+            "documentation": "https://www.home-assistant.io/integrations/uptime",
+            "codeowners": ["@frenck"],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "config_flow": true,
+            "is_built_in": true
+        }, {
+            "domain": "trace",
+            "name": "Trace",
+            "documentation": "https://www.home-assistant.io/integrations/automation",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "systemmonitor",
+            "name": "System Monitor",
+            "documentation": "https://www.home-assistant.io/integrations/systemmonitor",
+            "requirements": ["psutil==5.9.0"],
+            "codeowners": [],
+            "iot_class": "local_push",
+            "loggers": ["psutil"],
+            "is_built_in": true
+        }, {
+            "domain": "analytics",
+            "name": "Analytics",
+            "documentation": "https://www.home-assistant.io/integrations/analytics",
+            "codeowners": ["@home-assistant/core", "@ludeeus"],
+            "dependencies": ["api", "websocket_api"],
+            "after_dependencies": ["energy"],
+            "quality_scale": "internal",
+            "iot_class": "cloud_push",
+            "is_built_in": true
+        }, {
+            "domain": "remote",
+            "name": "Remote",
+            "documentation": "https://www.home-assistant.io/integrations/remote",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "wake_on_lan",
+            "name": "Wake on LAN",
+            "documentation": "https://www.home-assistant.io/integrations/wake_on_lan",
+            "requirements": ["wakeonlan==2.0.1"],
+            "codeowners": ["@ntilley905"],
+            "iot_class": "local_push",
+            "is_built_in": true
+        }, {
+            "domain": "input_number",
+            "integration_type": "helper",
+            "name": "Input Number",
+            "documentation": "https://www.home-assistant.io/integrations/input_number",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "group",
+            "integration_type": "helper",
+            "name": "Group",
+            "documentation": "https://www.home-assistant.io/integrations/group",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "iot_class": "calculated",
+            "config_flow": true,
+            "is_built_in": true
+        }, {
+            "domain": "sun",
+            "name": "Sun",
+            "documentation": "https://www.home-assistant.io/integrations/sun",
+            "codeowners": ["@Swamp-Ig"],
+            "quality_scale": "internal",
+            "iot_class": "calculated",
+            "config_flow": true,
+            "is_built_in": true
+        }, {
+            "domain": "proximity",
+            "name": "Proximity",
+            "documentation": "https://www.home-assistant.io/integrations/proximity",
+            "dependencies": ["device_tracker", "zone"],
+            "codeowners": [],
+            "quality_scale": "internal",
+            "iot_class": "calculated",
+            "is_built_in": true
+        }, {
+            "domain": "hassio",
+            "name": "Home Assistant Supervisor",
+            "documentation": "https://www.home-assistant.io/integrations/hassio",
+            "dependencies": ["http"],
+            "after_dependencies": ["panel_custom"],
+            "codeowners": ["@home-assistant/supervisor"],
+            "iot_class": "local_polling",
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "alarm_control_panel",
+            "name": "Alarm Control Panel",
+            "documentation": "https://www.home-assistant.io/integrations/alarm_control_panel",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "manual",
+            "name": "Manual Alarm Control Panel",
+            "documentation": "https://www.home-assistant.io/integrations/manual",
+            "codeowners": [],
+            "quality_scale": "internal",
+            "iot_class": "calculated",
+            "is_built_in": true
+        }, {
+            "domain": "hydrawise",
+            "name": "Hunter Hydrawise",
+            "documentation": "https://www.home-assistant.io/integrations/hydrawise",
+            "requirements": ["hydrawiser==0.2"],
+            "codeowners": ["@ptcryan"],
+            "iot_class": "cloud_polling",
+            "loggers": ["hydrawiser"],
+            "is_built_in": true
+        }, {
+            "domain": "yamaha_musiccast",
+            "name": "MusicCast",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/yamaha_musiccast",
+            "requirements": ["aiomusiccast==0.14.4"],
+            "ssdp": [{
+                    "manufacturer": "Yamaha Corporation"
+                }
+            ],
+            "dependencies": ["ssdp"],
+            "iot_class": "local_push",
+            "codeowners": ["@vigonotion", "@micha91"],
+            "loggers": ["aiomusiccast"],
+            "is_built_in": true
+        }, {
+            "domain": "switch",
+            "name": "Switch",
+            "documentation": "https://www.home-assistant.io/integrations/switch",
+            "after_dependencies": ["switch_as_x"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "humidifier",
+            "name": "Humidifier",
+            "documentation": "https://www.home-assistant.io/integrations/humidifier",
+            "codeowners": ["@home-assistant/core", "@Shulyaka"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "cast",
+            "name": "Google Cast",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/cast",
+            "requirements": ["pychromecast==12.1.4"],
+            "after_dependencies": ["cloud", "http", "media_source", "plex", "tts", "zeroconf"],
+            "zeroconf": ["_googlecast._tcp.local."],
+            "codeowners": ["@emontnemery"],
+            "iot_class": "local_polling",
+            "loggers": ["casttube", "pychromecast"],
+            "is_built_in": true
+        }, {
+            "domain": "hikvision",
+            "name": "Hikvision",
+            "documentation": "https://www.home-assistant.io/integrations/hikvision",
+            "requirements": ["pyhik==0.3.0"],
+            "codeowners": ["@mezz64"],
+            "iot_class": "local_push",
+            "loggers": ["pyhik"],
+            "is_built_in": true
+        }, {
+            "domain": "auth",
+            "name": "Auth",
+            "documentation": "https://www.home-assistant.io/integrations/auth",
+            "dependencies": ["http"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "mobile_app",
+            "name": "Mobile App",
+            "config_flow": true,
+            "documentation": "https://www.home-assistant.io/integrations/mobile_app",
+            "requirements": ["PyNaCl==1.5.0"],
+            "dependencies": ["http", "webhook", "person", "tag", "websocket_api"],
+            "after_dependencies": ["cloud", "camera", "notify"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "loggers": ["nacl"],
+            "is_built_in": true
+        }, {
+            "domain": "dhcp",
+            "name": "DHCP Discovery",
+            "documentation": "https://www.home-assistant.io/integrations/dhcp",
+            "requirements": ["scapy==2.4.5", "aiodiscover==1.4.11"],
+            "codeowners": ["@bdraco"],
+            "quality_scale": "internal",
+            "iot_class": "local_push",
+            "loggers": ["aiodiscover", "dnspython", "pyroute2", "scapy"],
+            "is_built_in": true
+        }, {
+            "domain": "weather",
+            "name": "Weather",
+            "documentation": "https://www.home-assistant.io/integrations/weather",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "camera",
+            "name": "Camera",
+            "documentation": "https://www.home-assistant.io/integrations/camera",
+            "dependencies": ["http"],
+            "requirements": ["PyTurboJPEG==1.6.6"],
+            "after_dependencies": ["media_player"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "broadlink",
+            "name": "Broadlink",
+            "documentation": "https://www.home-assistant.io/integrations/broadlink",
+            "requirements": ["broadlink==0.18.2"],
+            "codeowners": ["@danielhiversen", "@felipediel", "@L-I-Am"],
+            "config_flow": true,
+            "dhcp": [{
+                    "registered_devices": true
+                }, {
+                    "macaddress": "34EA34*"
+                }, {
+                    "macaddress": "24DFA7*"
+                }, {
+                    "macaddress": "A043B0*"
+                }, {
+                    "macaddress": "B4430D*"
+                }, {
+                    "macaddress": "C8F742*"
+                }
+            ],
+            "iot_class": "local_polling",
+            "loggers": ["broadlink"],
+            "is_built_in": true
+        }, {
+            "domain": "emby",
+            "name": "Emby",
+            "documentation": "https://www.home-assistant.io/integrations/emby",
+            "requirements": ["pyemby==1.8"],
+            "codeowners": ["@mezz64"],
+            "iot_class": "local_push",
+            "loggers": ["pyemby"],
+            "is_built_in": true
+        }, {
+            "domain": "select",
+            "name": "Select",
+            "documentation": "https://www.home-assistant.io/integrations/select",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "zone",
+            "name": "Zone",
+            "config_flow": false,
+            "documentation": "https://www.home-assistant.io/integrations/zone",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "diagnostics",
+            "name": "Diagnostics",
+            "config_flow": false,
+            "documentation": "https://www.home-assistant.io/integrations/diagnostics",
+            "dependencies": ["http"],
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "input_button",
+            "integration_type": "helper",
+            "name": "Input Button",
+            "documentation": "https://www.home-assistant.io/integrations/input_button",
+            "codeowners": ["@home-assistant/core"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }, {
+            "domain": "frontend",
+            "name": "Home Assistant Frontend",
+            "documentation": "https://www.home-assistant.io/integrations/frontend",
+            "requirements": ["home-assistant-frontend==20220707.1"],
+            "dependencies": ["api", "auth", "config", "device_automation", "diagnostics", "http", "lovelace", "onboarding", "search", "system_log", "websocket_api"],
+            "codeowners": ["@home-assistant/frontend"],
+            "quality_scale": "internal",
+            "is_built_in": true
+        }
+    ]
+}

@@ -1,15 +1,14 @@
-﻿using System.Text.Json;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace HomeAssistantNet.Api;
 
 public sealed record HaService
 {
     [JsonIgnore]
-    public string? Domain { get; set; }
+    public string? Domain { get; init; }
 
     [JsonIgnore]
-    public string? ServiceId { get; set; }
+    public string? ServiceId { get; init; }
 
     public string? Name { get; init; }
     public string? Description { get; init; }

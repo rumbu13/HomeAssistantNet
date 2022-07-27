@@ -14,12 +14,12 @@ public class EntityStateCache: CacheBase<HaEntityState>
 {
     ConcurrentDictionary<string, HaEntityState> states = new();
 
-    public EntityStateCache(IHaWsClient haWsClient)
+    public EntityStateCache(IHaClient haWsClient)
         : base(haWsClient)
     {        
     }
 
-    protected override void HaWsClient_EventReceived(object? sender, HaWsEventEventArgs e)
+    protected override void HaWsClient_EventReceived(object? sender, HaEventEventArgs e)
     {
         if (e.Event.EventType == "state_changed" && e.Event.Data is not null)
         {

@@ -1,4 +1,4 @@
-﻿using HomeAssistantNet.Helpers;
+﻿using HomeAssistantNet.Json;
 using System.Text.Json.Serialization;
 
 namespace HomeAssistantNet.Api;
@@ -23,9 +23,9 @@ public sealed record HaDevice
     public string? HwVersion { get; init; }
 
     public string? ViaDeviceId { get; init; }
-    public IReadOnlyList<string>? ConfigEntries { get; init; }
-    public IReadOnlyList<string[]>? Connections { get; init; }
-    public IReadOnlyList<string[]>? Identifiers { get; init; }
+    public string[]? ConfigEntries { get; init; }
+    public string[][]? Connections { get; init; }
+    public string[][]? Identifiers { get; init; }
 
 
 }

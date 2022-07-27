@@ -2,7 +2,7 @@
 
 namespace HomeAssistantNet.Client.Internal;
 
-internal sealed record HaAreaCreate : HaWsCommand
+internal sealed class HaAreaCreate : HaCommand
 {
     public HaAreaCreate(string name, string? picture)
         : base("config/area_registry/create")
@@ -14,7 +14,7 @@ internal sealed record HaAreaCreate : HaWsCommand
     public string? Picture { get; init; }
 }
 
-internal sealed record HaAreaUpdate : HaWsCommand
+internal sealed class HaAreaUpdate : HaCommand
 {
     public HaAreaUpdate(string areaId, string? name, string? picture)
         : base("config/area_registry/update")
@@ -28,7 +28,7 @@ internal sealed record HaAreaUpdate : HaWsCommand
     public string? Picture { get; init; }
 }
 
-internal sealed record HaAreaDelete : HaWsCommand
+internal sealed class HaAreaDelete : HaCommand
 {
     public HaAreaDelete(string areaId)
         : base("config/area_registry/delete")

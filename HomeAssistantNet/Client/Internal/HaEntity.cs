@@ -1,8 +1,6 @@
-﻿using HomeAssistantNet.Client;
+﻿namespace HomeAssistantNet.Client.Internal;
 
-namespace HomeAssistantNet.Client.Internal;
-
-internal sealed record HaEntityGet : HaWsCommand
+internal sealed class HaEntityGet : HaCommand
 {
     public HaEntityGet(string entityId)
         : base("config/entity_registry/get")
@@ -10,6 +8,16 @@ internal sealed record HaEntityGet : HaWsCommand
         EntityId = entityId;
     }
     public string EntityId { get; init; }
+}
+
+internal sealed class HaEntityGetSource : HaCommand
+{
+    public HaEntityGetSource(IEnumerable<string>? entityIds)
+        : base("entity/source")
+    {
+        EntityId = entityIds?.ToArray();
+    }
+    public string[]? EntityId { get; init; }
 }
 
 

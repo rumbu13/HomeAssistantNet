@@ -1,5 +1,4 @@
-﻿using HomeAssistantNet.Api;
-using System.Text.Json;
+﻿using System.Text.Json;
 
 namespace HomeAssistantNet.Client;
 
@@ -10,8 +9,4 @@ public sealed record HaEvent
     public DateTime? TimeFired { get; init; }
     public string? Origin { get; init; }
     public HaStateContext? Context { get; init; }
-
-    public HaStateChangeData? AsStateChange
-        => Data?.Deserialize<HaStateChangeData>(HaOptions.DefaultJsonSerializerOptions);
-
 }

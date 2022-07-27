@@ -1,8 +1,6 @@
-﻿using HomeAssistantNet.Client;
+﻿namespace HomeAssistantNet.Client.Internal;
 
-namespace HomeAssistantNet.Client.Internal;
-
-internal sealed record HaDeviceUpdate : HaWsCommand
+internal sealed class HaDeviceUpdate : HaCommand
 {
     public HaDeviceUpdate(string deviceId, string? areaId, string? nameByUser, string? disabledBy)
         : base("config/device_registry/update")
@@ -18,7 +16,7 @@ internal sealed record HaDeviceUpdate : HaWsCommand
     public string? DisabledBy { get; init; }
 }
 
-internal sealed record HaDeviceRemoveConfigEntry : HaWsCommand
+internal sealed class HaDeviceRemoveConfigEntry : HaCommand
 {
     public HaDeviceRemoveConfigEntry(string configEntryId, string deviceId)
         : base("config/device_registry/remove_config_entry")

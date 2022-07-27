@@ -7,24 +7,22 @@ namespace HomeAssistant.EventWatcher;
 public class MainWorker : BackgroundService
 {
     private readonly ILogger<MainWorker> _logger;
-    private readonly IHaWsClient _haWsClient;
+    private readonly IHaClient _haWsClient;
     private readonly HaOptions _options;
-    private readonly IHaRestClient _haRestClient;
     private readonly DateTime StartedOn = DateTime.UtcNow;
     private long messageCount;
 
-    public MainWorker(ILogger<MainWorker> logger, IHaWsClient haWsClient, IHaRestClient haRestClient, IOptions<HaOptions> options)
+    public MainWorker(ILogger<MainWorker> logger, IHaClient haWsClient, IOptions<HaOptions> options)
     {
         _logger = logger;
         _haWsClient = haWsClient;
         _options = options.Value;
-        _haRestClient = haRestClient;
     }
 
     public override async Task StartAsync(CancellationToken cancellationToken)
     {
 
-        var clientOptions = new HaWsClientOptionsBuilder()
+        var clientOptions = new HaClientOptionsBuilder()
             .WithHost(_options!.Host!)
             .WithPort(_options!.Port ?? 8123)
             .WithConnectTimeout(TimeSpan.FromSeconds(30))
@@ -33,12 +31,7 @@ public class MainWorker : BackgroundService
             .WithReconnectMaxTimeout(TimeSpan.FromSeconds(60))
             .WithToken(_options!.Token!).Build();
 
-        var restOptions = new HaRestClientOptionsBuilder()
-            .WithHost(_options!.Host!)
-            .WithPort(_options!.Port ?? 8123)
-            .WithTimeout(TimeSpan.FromSeconds(30))
-            .WithToken(_options!.Token!).Build();
-
+      
         _haWsClient.Connected += (sender, args) =>
         {
             _logger.LogInformation("Connected to {host} {port}, version {version}",
@@ -59,7 +52,6 @@ public class MainWorker : BackgroundService
             => Interlocked.Increment(ref messageCount);
 
         _haWsClient.Start(clientOptions);
-        _haRestClient.Start(restOptions);
 
         await base.StartAsync(cancellationToken);
 
@@ -78,8 +70,6 @@ public class MainWorker : BackgroundService
     {
         if (_haWsClient.IsRunning)
             _haWsClient.Stop();
-        if (_haRestClient.IsRunning)
-            _haRestClient.Stop();
         await base.StopAsync(cancellationToken);
     }
 }
