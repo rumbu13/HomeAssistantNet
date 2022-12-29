@@ -1,0 +1,11 @@
+{
+    "id": 27,
+    "type": "result",
+    "success": true,
+    "result": {
+        "cost_sensors": {
+            "sensor.tech_room_meter_energy": "sensor.tech_room_meter_energy_cost"
+        },
+        "solar_forecast_domains": []
+    }
+}

@@ -1,0 +1,243 @@
+{
+    "id": 25,
+    "type": "result",
+    "success": true,
+    "result": {
+        "lovelace": {
+            "component_name": "lovelace",
+            "icon": null,
+            "title": null,
+            "config": {
+                "mode": "storage"
+            },
+            "url_path": "lovelace",
+            "require_admin": false
+        },
+        "lovelace-lab": {
+            "component_name": "lovelace",
+            "icon": "mdi:chemical-weapon",
+            "title": "Lab",
+            "config": {
+                "mode": "storage"
+            },
+            "url_path": "lovelace-lab",
+            "require_admin": true
+        },
+        "lovelace-tablet": {
+            "component_name": "lovelace",
+            "icon": "mdi:tablet",
+            "title": "Tablet",
+            "config": {
+                "mode": "storage"
+            },
+            "url_path": "lovelace-tablet",
+            "require_admin": false
+        },
+        "lovelace-mobile": {
+            "component_name": "lovelace",
+            "icon": "mdi:cellphone",
+            "title": "Mobile",
+            "config": {
+                "mode": "storage"
+            },
+            "url_path": "lovelace-mobile",
+            "require_admin": false
+        },
+        "lovelace-config": {
+            "component_name": "lovelace",
+            "icon": "mdi:cog",
+            "title": "Config",
+            "config": {
+                "mode": "storage"
+            },
+            "url_path": "lovelace-config",
+            "require_admin": true
+        },
+        "lovelace-all": {
+            "component_name": "lovelace",
+            "icon": "mdi:format-list-bulleted-square",
+            "title": "ALL",
+            "config": {
+                "mode": "storage"
+            },
+            "url_path": "lovelace-all",
+            "require_admin": false
+        },
+        "lovelace-desktop": {
+            "component_name": "lovelace",
+            "icon": "mdi:monitor",
+            "title": "Desktop",
+            "config": {
+                "mode": "storage"
+            },
+            "url_path": "lovelace-desktop",
+            "require_admin": false
+        },
+        "config": {
+            "component_name": "config",
+            "icon": "hass:cog",
+            "title": "config",
+            "config": null,
+            "url_path": "config",
+            "require_admin": true
+        },
+        "hassio": {
+            "component_name": "custom",
+            "icon": null,
+            "title": null,
+            "config": {
+                "_panel_custom": {
+                    "name": "hassio-main",
+                    "embed_iframe": true,
+                    "trust_external": false,
+                    "js_url": "/api/hassio/app/entrypoint.js"
+                }
+            },
+            "url_path": "hassio",
+            "require_admin": true
+        },
+        "profile": {
+            "component_name": "profile",
+            "icon": null,
+            "title": null,
+            "config": null,
+            "url_path": "profile",
+            "require_admin": false
+        },
+        "developer-tools": {
+            "component_name": "developer-tools",
+            "icon": "hass:hammer",
+            "title": "developer_tools",
+            "config": null,
+            "url_path": "developer-tools",
+            "require_admin": true
+        },
+        "core_ssh": {
+            "component_name": "custom",
+            "icon": "mdi:console",
+            "title": "Terminal",
+            "config": {
+                "ingress": "core_ssh",
+                "_panel_custom": {
+                    "name": "hassio-main",
+                    "embed_iframe": true,
+                    "trust_external": false,
+                    "js_url": "/api/hassio/app/entrypoint.js"
+                }
+            },
+            "url_path": "core_ssh",
+            "require_admin": true
+        },
+        "a0d7b954_jupyterlablite": {
+            "component_name": "custom",
+            "icon": "mdi:flask-outline",
+            "title": "JupyterLab",
+            "config": {
+                "ingress": "a0d7b954_jupyterlablite",
+                "_panel_custom": {
+                    "name": "hassio-main",
+                    "embed_iframe": true,
+                    "trust_external": false,
+                    "js_url": "/api/hassio/app/entrypoint.js"
+                }
+            },
+            "url_path": "a0d7b954_jupyterlablite",
+            "require_admin": true
+        },
+        "core_configurator": {
+            "component_name": "custom",
+            "icon": "mdi:wrench",
+            "title": "File editor",
+            "config": {
+                "ingress": "core_configurator",
+                "_panel_custom": {
+                    "name": "hassio-main",
+                    "embed_iframe": true,
+                    "trust_external": false,
+                    "js_url": "/api/hassio/app/entrypoint.js"
+                }
+            },
+            "url_path": "core_configurator",
+            "require_admin": true
+        },
+        "_my_redirect": {
+            "component_name": "my",
+            "icon": null,
+            "title": null,
+            "config": null,
+            "url_path": "_my_redirect",
+            "require_admin": false
+        },
+        "history": {
+            "component_name": "history",
+            "icon": "hass:chart-box",
+            "title": "history",
+            "config": null,
+            "url_path": "history",
+            "require_admin": false
+        },
+        "media-browser": {
+            "component_name": "media-browser",
+            "icon": "hass:play-box-multiple",
+            "title": "media_browser",
+            "config": null,
+            "url_path": "media-browser",
+            "require_admin": false
+        },
+        "logbook": {
+            "component_name": "logbook",
+            "icon": "hass:format-list-bulleted-type",
+            "title": "logbook",
+            "config": null,
+            "url_path": "logbook",
+            "require_admin": false
+        },
+        "map": {
+            "component_name": "map",
+            "icon": "hass:tooltip-account",
+            "title": "map",
+            "config": null,
+            "url_path": "map",
+            "require_admin": false
+        },
+        "energy": {
+            "component_name": "energy",
+            "icon": "mdi:lightning-bolt",
+            "title": "energy",
+            "config": null,
+            "url_path": "energy",
+            "require_admin": false
+        },
+        "shopping-list": {
+            "component_name": "shopping-list",
+            "icon": "mdi:cart",
+            "title": "shopping_list",
+            "config": null,
+            "url_path": "shopping-list",
+            "require_admin": false
+        },
+        "calendar": {
+            "component_name": "calendar",
+            "icon": "hass:calendar",
+            "title": "calendar",
+            "config": null,
+            "url_path": "calendar",
+            "require_admin": false
+        },
+        "hacs": {
+            "component_name": "custom",
+            "icon": "hacs:hacs",
+            "title": "HACS",
+            "config": {
+                "_panel_custom": {
+                    "name": "hacs-frontend",
+                    "embed_iframe": true,
+                    "trust_external": false,
+                    "js_url": "/hacsfiles/frontend/entrypoint.js?hacstag=20220714083628"
+                }
+            },
+            "url_path": "hacs",
+            "require_admin": true
+        }
+    }
+}

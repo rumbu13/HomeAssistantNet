@@ -1,6 +1,7 @@
-﻿using System.Text.Json;
+﻿using HomeAssistantNet.Api;
+using System.Text.Json;
 
-namespace HomeAssistantNet.Client.Internal;
+namespace HomeAssistantNet.Client;
 
 internal sealed record HaMessage
 {

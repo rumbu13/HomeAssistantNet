@@ -24,8 +24,8 @@ public sealed class HaClientOptionsBuilder
         if (options.ConnectTimeout < TimeSpan.Zero)
             throw new ArgumentOutOfRangeException(nameof(options.ConnectTimeout), options.ConnectTimeout,
                 "Invalid connect timeout");
-        if (options.DiconnectTimeout < TimeSpan.Zero)
-            throw new ArgumentOutOfRangeException(nameof(options.DiconnectTimeout), options.DiconnectTimeout,
+        if (options.DisconnectTimeout < TimeSpan.Zero)
+            throw new ArgumentOutOfRangeException(nameof(options.DisconnectTimeout), options.DisconnectTimeout,
                 "Invalid disconnect timeout");
         if (options.SendTimeout < TimeSpan.Zero)
             throw new ArgumentOutOfRangeException(nameof(options.SendTimeout), options.SendTimeout,
@@ -122,5 +122,6 @@ public sealed class HaClientOptionsBuilder
         return this;
     }
 
+    
 
 }

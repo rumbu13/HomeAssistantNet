@@ -1,9 +1,10 @@
-﻿using System.Text.Json;
+﻿using System.Globalization;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 namespace HomeAssistantNet.Json;
 
-internal class JsonAlwaysStringConverter : JsonConverter<string>
+public class JsonAlwaysStringConverter : JsonConverter<string>
 {
     public override string? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {
@@ -14,7 +15,7 @@ internal class JsonAlwaysStringConverter : JsonConverter<string>
             case JsonTokenType.False:
                 return "false";
             case JsonTokenType.Number:
-                return reader.GetDouble().ToString();
+                return reader.GetDouble().ToString(CultureInfo.InvariantCulture);
             case JsonTokenType.True:
                 return "true";
             default:

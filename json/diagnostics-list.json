@@ -1,0 +1,73 @@
+{
+    "id": 24,
+    "type": "result",
+    "success": true,
+    "result": [{
+            "domain": "hassio",
+            "handlers": {
+                "config_entry": true,
+                "device": false
+            }
+        }, {
+            "domain": "garbage_collection",
+            "handlers": {
+                "config_entry": true,
+                "device": false
+            }
+        }, {
+            "domain": "xiaomi_miio",
+            "handlers": {
+                "config_entry": true,
+                "device": false
+            }
+        }, {
+            "domain": "generic",
+            "handlers": {
+                "config_entry": true,
+                "device": false
+            }
+        }, {
+            "domain": "version",
+            "handlers": {
+                "config_entry": true,
+                "device": false
+            }
+        }, {
+            "domain": "mqtt",
+            "handlers": {
+                "config_entry": true,
+                "device": true
+            }
+        }, {
+            "domain": "shelly",
+            "handlers": {
+                "config_entry": true,
+                "device": false
+            }
+        }, {
+            "domain": "stream",
+            "handlers": {
+                "config_entry": false,
+                "device": false
+            }
+        }, {
+            "domain": "camera",
+            "handlers": {
+                "config_entry": true,
+                "device": false
+            }
+        }, {
+            "domain": "hacs",
+            "handlers": {
+                "config_entry": true,
+                "device": false
+            }
+        }, {
+            "domain": "smartthinq_sensors",
+            "handlers": {
+                "config_entry": true,
+                "device": true
+            }
+        }
+    ]
+}

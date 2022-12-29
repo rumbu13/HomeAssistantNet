@@ -1,0 +1,16 @@
+{
+    "id": 15,
+    "type": "result",
+    "success": true,
+    "result": [{
+            "name": "BLE Stats Counter",
+            "icon": "mdi:access-point-check",
+            "initial": 0,
+            "step": 1,
+            "minimum": null,
+            "maximum": null,
+            "restore": true,
+            "id": "ble_stats_counter"
+        }
+    ]
+}

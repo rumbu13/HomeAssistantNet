@@ -12,12 +12,33 @@ namespace HomeAssistantNet.Json;
 internal class JsonHaSelectOptionConverter : JsonConverter<HaSelectOption>
 {
     public override HaSelectOption? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
-    => reader.TokenType switch
     {
-        JsonTokenType.StartObject => JsonSerializer.Deserialize<HaSelectOption>(ref reader, options),
-        JsonTokenType.String => new HaSelectOption() { Value = JsonSerializer.Deserialize<string>(ref reader, options) },
-        _ => throw new JsonException()
-    };
+
+        if (reader.TokenType == JsonTokenType.String)
+        {
+            var v = reader.GetString();
+            return new HaSelectOption() { Label = v, Value = v };
+        }
+        else if (reader.TokenType == JsonTokenType.StartObject)
+        {
+            string? label = null, value = null;
+            while (reader.Read() && reader.TokenType != JsonTokenType.EndObject)
+            {
+                if (reader.GetString() == "label")
+                {
+                    reader.Read();
+                    label = reader.GetString();
+                }
+                else if (reader.GetString() == "value")
+                {
+                    reader.Read();
+                    value = reader.GetString();
+                }
+            }
+            return new HaSelectOption() { Label = label, Value = value };
+        }
+        throw new JsonException();
+    }   
 
     public override void Write(Utf8JsonWriter writer, HaSelectOption value, JsonSerializerOptions options)
     {

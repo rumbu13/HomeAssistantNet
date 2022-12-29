@@ -1,0 +1,115 @@
+{
+    "id": 8,
+    "type": "result",
+    "success": true,
+    "result": [{
+            "id": "09ad40104a2341c68a5207d7ed7a5a98",
+            "username": null,
+            "name": "Home Assistant Content",
+            "is_owner": false,
+            "is_active": true,
+            "local_only": false,
+            "system_generated": true,
+            "group_ids": ["system-read-only"],
+            "credentials": []
+        }, {
+            "id": "c43b79cbd29d452d9d80778672865ac4",
+            "username": null,
+            "name": "Supervisor",
+            "is_owner": false,
+            "is_active": true,
+            "local_only": false,
+            "system_generated": true,
+            "group_ids": ["system-admin"],
+            "credentials": []
+        }, {
+            "id": "84f251a67b55473c81a6c14d676cfac4",
+            "username": "mqtt",
+            "name": "MQTT User",
+            "is_owner": false,
+            "is_active": true,
+            "local_only": true,
+            "system_generated": false,
+            "group_ids": ["system-users"],
+            "credentials": [{
+                    "type": "homeassistant"
+                }
+            ]
+        }, {
+            "id": "443f33d2f4884468a864468e80ead046",
+            "username": null,
+            "name": "Home Assistant Cast",
+            "is_owner": false,
+            "is_active": true,
+            "local_only": false,
+            "system_generated": true,
+            "group_ids": ["system-admin"],
+            "credentials": []
+        }, {
+            "id": "ca6d4a4662f64bbab2808049371d637f",
+            "username": "nico",
+            "name": "Nico",
+            "is_owner": false,
+            "is_active": true,
+            "local_only": false,
+            "system_generated": false,
+            "group_ids": ["system-users"],
+            "credentials": [{
+                    "type": "homeassistant"
+                }
+            ]
+        }, {
+            "id": "18e6de7108d243ebb87e0f5c5f0e30c3",
+            "username": "rares",
+            "name": "Rareş",
+            "is_owner": false,
+            "is_active": true,
+            "local_only": false,
+            "system_generated": false,
+            "group_ids": ["system-users"],
+            "credentials": [{
+                    "type": "homeassistant"
+                }
+            ]
+        }, {
+            "id": "1cc26ebbe6b04bbba4fdfb957c7e2fb9",
+            "username": "kiosk",
+            "name": "Kiosk Mode",
+            "is_owner": false,
+            "is_active": true,
+            "local_only": true,
+            "system_generated": false,
+            "group_ids": ["system-users"],
+            "credentials": [{
+                    "type": "homeassistant"
+                }
+            ]
+        }, {
+            "id": "f1e907a66e394e578ed9024a8bcc4781",
+            "username": "rumbu",
+            "name": "rumbu",
+            "is_owner": true,
+            "is_active": true,
+            "local_only": false,
+            "system_generated": false,
+            "group_ids": ["system-admin"],
+            "credentials": [{
+                    "type": "homeassistant"
+                }
+            ]
+        }, {
+            "id": "23879b8c2f684281a77aa9e0b8e5d93f",
+            "username": "razvan",
+            "name": "Răzvan",
+            "is_owner": false,
+            "is_active": true,
+            "local_only": false,
+            "system_generated": false,
+            "group_ids": ["system-admin"],
+            "credentials": [{
+                    "type": "homeassistant"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,177 @@
+{
+    "id": 20,
+    "type": "result",
+    "success": true,
+    "result": [{
+            "name": "Office Light Automation",
+            "icon": "mdi:lightbulb-auto",
+            "id": "office_light_auto_control"
+        }, {
+            "name": "Alarm Light Effects",
+            "id": "alarm_light_effects",
+            "icon": "mdi:lightbulb-alert"
+        }, {
+            "name": "Alarm Sound Effects",
+            "icon": "mdi:music-note",
+            "id": "alarm_sound_effects"
+        }, {
+            "name": "Alarm Speech Effects",
+            "icon": "mdi:account-voice",
+            "id": "alarm_speech_effects"
+        }, {
+            "name": "Alarm Notification Effects",
+            "icon": "mdi:message-alert",
+            "id": "alarm_notifications"
+        }, {
+            "name": "Alarm Silent Activation",
+            "icon": "mdi:shield-remove-outline",
+            "id": "alarm_silent_activation"
+        }, {
+            "icon": "mdi:shield-refresh",
+            "name": "Alarm Automatic",
+            "id": "alarm_automatic"
+        }, {
+            "name": "Alarm Panic Nico",
+            "icon": "mdi:face-woman",
+            "id": "alarm_panic_nico"
+        }, {
+            "name": "Alarm Panic Rareş",
+            "id": "alarm_panic_rares",
+            "icon": "mdi:face-man-shimmer"
+        }, {
+            "name": "Alarm Panic Răzvan",
+            "id": "alarm_panic_razvan",
+            "icon": "mdi:face-man"
+        }, {
+            "name": "Alarm Panic",
+            "icon": "mdi:home-account",
+            "id": "alarm_panic"
+        }, {
+            "name": "Alarm Automatic Flow",
+            "icon": "mdi:shield-refresh-outline",
+            "id": "alarm_automatic_flow"
+        }, {
+            "name": "Guest Mode",
+            "icon": "mdi:bed",
+            "id": "guest_mode"
+        }, {
+            "name": "Office AC Automation",
+            "icon": "mdi:air-conditioner",
+            "id": "office_summertime_cool"
+        }, {
+            "name": "Bedroom AC Automation",
+            "icon": "mdi:air-conditioner",
+            "id": "bedroom_summertime_cool"
+        }, {
+            "name": "Child Room AC Automation",
+            "icon": "mdi:air-conditioner",
+            "id": "child_room_summertime_cool"
+        }, {
+            "name": "Living Room AC Automation",
+            "icon": "mdi:air-conditioner",
+            "id": "living_room_summertime_cool"
+        }, {
+            "name": "Bedroom RGB Automation",
+            "icon": "mdi:led-strip-variant",
+            "id": "bedroom_rgb_auto"
+        }, {
+            "name": "Living Room RGB Automation",
+            "icon": "mdi:led-strip-variant",
+            "id": "living_room_rgb_auto"
+        }, {
+            "name": "Child Room RGB Automation",
+            "icon": "mdi:led-strip-variant",
+            "id": "child_room_rgb_auto"
+        }, {
+            "name": "Test Toggle 1",
+            "icon": "mdi:numeric-1-circle",
+            "id": "test_toggle_1"
+        }, {
+            "name": "Test Toggle 2",
+            "icon": "mdi:numeric-2-circle",
+            "id": "test_toggle_2"
+        }, {
+            "name": "Alarm Siren Effects",
+            "icon": "mdi:bullhorn",
+            "id": "alarm_siren_effects"
+        }, {
+            "name": "Kitchen Light Automation",
+            "icon": "mdi:lightbulb-auto",
+            "id": "kitchen_light_automation"
+        }, {
+            "name": "netdaemon_net_daemon_apps_automations_state_app_state_app",
+            "id": "netdaemon_net_daemon_apps_automations_state_app_state_app"
+        }, {
+            "name": "netdaemon_net_daemon_apps_automations_light_app_light_app",
+            "id": "netdaemon_net_daemon_apps_automations_light_app_light_app"
+        }, {
+            "name": "netdaemon_net_daemon_apps_automations_cover_app_cover_app",
+            "id": "netdaemon_net_daemon_apps_automations_cover_app_cover_app"
+        }, {
+            "name": "netdaemon_net_daemon_apps_automations_climate_app_climate_app",
+            "id": "netdaemon_net_daemon_apps_automations_climate_app_climate_app"
+        }, {
+            "name": "netdaemon_net_daemon_apps_automations_presence_app_presence_app",
+            "id": "netdaemon_net_daemon_apps_automations_presence_app_presence_app"
+        }, {
+            "name": "BLE Stats Toggle",
+            "icon": "mdi:access-point-plus",
+            "id": "ble_stats_toggle"
+        }, {
+            "name": "Guest Relu Trusted",
+            "initial": false,
+            "icon": "mdi:account-check",
+            "id": "guest_relu_trusted"
+        }, {
+            "name": "Guest Luca Trusted",
+            "initial": false,
+            "icon": "mdi:account-check",
+            "id": "guest_luca_trusted"
+        }, {
+            "name": "Guest Cristina Trusted",
+            "initial": false,
+            "icon": "mdi:account-check",
+            "id": "guest_cristina_trusted"
+        }, {
+            "name": "Guest Laura Trusted",
+            "initial": false,
+            "icon": "mdi:account-check",
+            "id": "guest_laura_trusted"
+        }, {
+            "name": "Guest Nico Trusted",
+            "initial": false,
+            "icon": "mdi:account-check",
+            "id": "guest_nico_trusted"
+        }, {
+            "name": "Guest Aron Trusted",
+            "initial": false,
+            "icon": "mdi:account-check",
+            "id": "guest_aron_trusted"
+        }, {
+            "name": "Incognito Trusted",
+            "initial": false,
+            "icon": "mdi:account-check",
+            "id": "incognito_trusted"
+        }, {
+            "name": "Auto Guest Mode",
+            "initial": false,
+            "id": "auto_guest_mode"
+        }, {
+            "name": "Auto Guest Mode",
+            "initial": false,
+            "id": "auto_guest_mode_2"
+        }, {
+            "name": "Auto Guest Mode",
+            "initial": false,
+            "id": "auto_guest_mode_3"
+        }, {
+            "name": "Auto Guest Mode",
+            "initial": false,
+            "id": "auto_guest_mode_4"
+        }, {
+            "name": "Auto Guest Mode",
+            "initial": false,
+            "id": "auto_guest_mode_5"
+        }
+    ]
+}

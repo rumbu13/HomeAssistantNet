@@ -1,0 +1,12 @@
+{
+    "id": 13,
+    "type": "result",
+    "success": true,
+    "result": {
+        "unit_system": "metric",
+        "latitude": 44.55,
+        "longitude": 26.0724,
+        "time_zone": "Europe/Bucharest",
+        "currency": "RON"
+    }
+}

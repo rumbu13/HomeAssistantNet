@@ -1,0 +1,14 @@
+{
+    "id": 3,
+    "type": "result",
+    "success": true,
+    "result": {
+        "preferences": {
+            "base": false,
+            "diagnostics": false,
+            "usage": false,
+            "statistics": false
+        },
+        "onboarded": true
+    }
+}

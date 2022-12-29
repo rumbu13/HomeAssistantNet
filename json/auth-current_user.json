@@ -1,0 +1,22 @@
+{
+    "id": 6,
+    "type": "result",
+    "success": true,
+    "result": {
+        "id": "f1e907a66e394e578ed9024a8bcc4781",
+        "name": "rumbu",
+        "is_owner": true,
+        "is_admin": true,
+        "credentials": [{
+                "auth_provider_type": "homeassistant",
+                "auth_provider_id": null
+            }
+        ],
+        "mfa_modules": [{
+                "id": "totp",
+                "name": "Authenticator app",
+                "enabled": false
+            }
+        ]
+    }
+}

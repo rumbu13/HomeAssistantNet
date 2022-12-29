@@ -9,4 +9,5 @@ public enum HaDisconnectReason
     ConnectionClosed,
     InvalidData,
     CommunicationError,
+    InvalidOperation,
 }

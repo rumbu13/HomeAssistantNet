@@ -1,0 +1,33 @@
+{
+    "id": 12,
+    "type": "result",
+    "success": true,
+    "result": {
+        "latitude": 44.54949222050483,
+        "longitude": 26.103263497352604,
+        "elevation": 89,
+        "unit_system": {
+            "length": "km",
+            "accumulated_precipitation": "mm",
+            "mass": "g",
+            "pressure": "Pa",
+            "temperature": "°C",
+            "volume": "L",
+            "wind_speed": "m/s"
+        },
+        "location_name": "Casa del Mar",
+        "time_zone": "Europe/Bucharest",
+        "components": ["humidifier", "notify.webostv", "notify", "timer", "sensor.browser_mod", "utility_meter", "sensor.snmp", "webostv", "met", "input_datetime", "update", "media_player.emby", "cast", "tag", "speedtestdotnet", "fontawesome", "usb", "uptime", "sensor.shelly", "automation", "sensor.mobile_app", "sensor.illuminance", "weather.met", "sensor.local_ip", "sensor.hacs", "tts.google_translate", "cover.template", "wake_on_lan", "binary_sensor.xiaomi_miio", "sensor.broadlink", "notify.mobile_app", "alarm_control_panel.manual", "device_tracker.mqtt", "input_number", "binary_sensor.hassio", "sun", "ssdp", "xiaomi_miio", "button", "sensor.utility_meter", "gree", "my", "climate.mqtt", "system_log", "input_button", "sensor", "climate.gree", "sensor.systemmonitor", "binary_sensor.mobile_app", "person", "binary_sensor.group", "cover.shelly", "media_source", "stream", "analytics", "template", "energy", "number.mqtt", "binary_sensor.hikvision", "vacuum.xiaomi_miio", "radio_browser", "number.yamaha_musiccast", "search", "input_boolean", "select", "system_health", "dhcp", "device_tracker.nmap_tracker", "local_ip", "camera.browser_mod", "humidifier.smartthinq_sensors", "sensor.moon", "lovelace", "switch", "button.mqtt", "select.yamaha_musiccast", "alarm_control_panel", "binary_sensor.smartthinq_sensors", "http", "sensor.smartthinq_sensors", "webhook", "proximity", "switch_as_x", "proxmoxve", "binary_sensor.mqtt", "hassio", "browser_mod", "application_credentials", "sensor.garbage_collection", "mqtt", "climate.smartthinq_sensors", "switch.yamaha_musiccast", "sensor.hassio", "map", "remote", "moon", "input_select", "scene.mqtt", "light.shelly", "calendar", "calendar.garbage_collection", "switch.home_connect", "websocket_api", "binary_sensor.trend", "light", "group", "script", "media_player.yamaha_musiccast", "binary_sensor.shelly", "default_config", "hydrawise", "mobile_app", "config", "zone", "discord", "media_player.webostv", "camera.generic", "blueprint", "recorder", "auth", "number", "vacuum.mqtt", "camera", "homeassistant", "media_player.lg_netcast", "device_automation", "notify.discord", "media_player.browser_mod", "network", "zeroconf", "fan.mqtt", "cover", "device_tracker.mobile_app", "sensor.xiaomi_miio", "sensor.home_connect", "vacuum", "binary_sensor.home_connect", "sensor.energy", "switch.mqtt", "alarm_control_panel.mqtt", "light.home_connect", "fan", "persistent_notification", "sensor.version", "weather", "history", "switch.broadlink", "shelly", "sensor.dnsip", "tts", "garbage_collection", "camera.mqtt", "dnsip", "siren", "switch.shelly", "switch.hydrawise", "climate", "sensor.speedtestdotnet", "broadlink", "dlna_dms", "binary_sensor.template", "lock", "api", "version", "generic", "siren.mqtt", "binary_sensor.version", "binary_sensor.tod", "binary_sensor.hydrawise", "counter", "smartthinq_sensors", "season", "cover.mqtt", "onboarding", "switch.gree", "light.mqtt", "fan.smartthinq_sensors", "switch.smartthinq_sensors", "hacs", "remote.broadlink", "calendar.google", "sensor.season", "binary_sensor.workday", "scene.homeassistant", "rest_command", "nmap_tracker", "binary_sensor.proxmoxve", "light.browser_mod", "update.hassio", "ipp", "scene", "sensor.mqtt", "tts.edge_tts", "sensor.uptime", "sensor.hydrawise", "button.shelly", "trace", "light.switch_as_x", "media_player.cast", "sensor.template", "logbook", "humidifier.mqtt", "frontend", "powercalc", "binary_sensor.browser_mod", "yamaha_musiccast", "diagnostics", "input_text", "select.mqtt", "home_connect", "binary_sensor", "lock.mqtt", "media_player", "cloud", "google", "image", "device_tracker", "shopping_list"],
+        "config_dir": "/config",
+        "whitelist_external_dirs": ["/config/www", "/media"],
+        "allowlist_external_dirs": ["/config/www", "/media"],
+        "allowlist_external_urls": [],
+        "version": "2022.7.7",
+        "config_source": "yaml",
+        "safe_mode": false,
+        "state": "RUNNING",
+        "external_url": "https://rumbu13.go.ro",
+        "internal_url": "http://192.168.1.113:8123",
+        "currency": "RON"
+    }
+}

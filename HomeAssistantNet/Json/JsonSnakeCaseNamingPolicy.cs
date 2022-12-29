@@ -83,7 +83,7 @@ internal class JsonSnakeCaseNamingPolicy : JsonNamingPolicy
 
         Dump(ref buffer, ref pos, chars.Slice(j));
 
-        var result = buffer.Slice(0, pos).ToString();
+        var result = buffer[..pos].ToString();
 
         return result;
     }

@@ -1,0 +1,42 @@
+{
+    "id": 29,
+    "type": "result",
+    "success": true,
+    "result": null
+}{
+    "id": 29,
+    "type": "event",
+    "event": {
+        "event": "supervisor_update",
+        "update_key": "info",
+        "data": {
+            "state": "freeze"
+        }
+    }
+}{
+    "id": 29,
+    "type": "event",
+    "event": {
+        "event": "supervisor_update",
+        "update_key": "info",
+        "data": {
+            "state": "running"
+        }
+    }
+}{
+    "id": 29,
+    "type": "event",
+    "event": {
+        "event": "addon",
+        "slug": "core_letsencrypt",
+        "state": "started"
+    }
+}{
+    "id": 29,
+    "type": "event",
+    "event": {
+        "event": "addon",
+        "slug": "core_letsencrypt",
+        "state": "stopped"
+    }
+}

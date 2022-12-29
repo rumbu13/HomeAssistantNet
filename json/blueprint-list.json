@@ -1,0 +1,120 @@
+{
+    "id": 11,
+    "type": "result",
+    "success": true,
+    "result": {
+        "homeassistant/notify_leaving_zone.yaml": {
+            "metadata": {
+                "name": "Zone Notification",
+                "description": "Send a notification to a device when a person leaves a specific zone.",
+                "domain": "automation",
+                "source_url": "https://github.com/home-assistant/core/blob/dev/homeassistant/components/automation/blueprints/notify_leaving_zone.yaml",
+                "input": {
+                    "person_entity": {
+                        "name": "Person",
+                        "selector": {
+                            "entity": {
+                                "domain": "person",
+                                "multiple": false
+                            }
+                        }
+                    },
+                    "zone_entity": {
+                        "name": "Zone",
+                        "selector": {
+                            "entity": {
+                                "domain": "zone",
+                                "multiple": false
+                            }
+                        }
+                    },
+                    "notify_device": {
+                        "name": "Device to notify",
+                        "description": "Device needs to run the official Home Assistant app to receive notifications.",
+                        "selector": {
+                            "device": {
+                                "integration": "mobile_app",
+                                "multiple": false
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "homeassistant/motion_light.yaml": {
+            "metadata": {
+                "name": "Motion-activated Light",
+                "description": "Turn on a light when motion is detected.",
+                "domain": "automation",
+                "source_url": "https://github.com/home-assistant/core/blob/dev/homeassistant/components/automation/blueprints/motion_light.yaml",
+                "input": {
+                    "motion_entity": {
+                        "name": "Motion Sensor",
+                        "selector": {
+                            "entity": {
+                                "domain": "binary_sensor",
+                                "device_class": "motion",
+                                "multiple": false
+                            }
+                        }
+                    },
+                    "light_target": {
+                        "name": "Light",
+                        "selector": {
+                            "target": {
+                                "entity": {
+                                    "domain": "light"
+                                }
+                            }
+                        }
+                    },
+                    "no_motion_wait": {
+                        "name": "Wait time",
+                        "description": "Time to leave the light on after last motion is detected.",
+                        "default": 120,
+                        "selector": {
+                            "number": {
+                                "min": 0.0,
+                                "max": 3600.0,
+                                "unit_of_measurement": "seconds",
+                                "step": 1.0,
+                                "mode": "slider"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "ui_lovelace_minimalist/set_theme.yaml": {
+            "metadata": {
+                "name": "System Set Default Theme",
+                "description": "Set the default themes on start.",
+                "domain": "automation",
+                "input": {
+                    "theme": {
+                        "name": "Which Theme",
+                        "description": "Which theme would you like to set as default on reload / start-up?",
+                        "selector": {
+                            "select": {
+                                "options": ["minimalist-desktop", "minimalist-mobile", "minimalist-mobile-tapbar"],
+                                "custom_value": false,
+                                "multiple": false
+                            }
+                        }
+                    },
+                    "mode": {
+                        "name": "Which Mode should it be default in",
+                        "description": "Default in Dark or Light mode?",
+                        "selector": {
+                            "select": {
+                                "options": ["light", "dark"],
+                                "custom_value": false,
+                                "multiple": false
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

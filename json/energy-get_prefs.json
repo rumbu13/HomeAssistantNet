@@ -1,0 +1,22 @@
+{
+    "id": 17,
+    "type": "result",
+    "success": true,
+    "result": {
+        "energy_sources": [{
+                "type": "grid",
+                "flow_from": [{
+                        "stat_energy_from": "sensor.tech_room_meter_energy",
+                        "stat_cost": null,
+                        "entity_energy_from": "sensor.tech_room_meter_energy",
+                        "entity_energy_price": null,
+                        "number_energy_price": 0.801545
+                    }
+                ],
+                "flow_to": [],
+                "cost_adjustment_day": 0.0
+            }
+        ],
+        "device_consumption": []
+    }
+}

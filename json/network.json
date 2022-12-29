@@ -1,0 +1,258 @@
+{
+    "id": 24,
+    "type": "result",
+    "success": true,
+    "result": {
+        "adapters": [{
+                "name": "lo",
+                "index": 1,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [{
+                        "address": "127.0.0.1",
+                        "network_prefix": 8
+                    }
+                ],
+                "ipv6": [{
+                        "address": "::1",
+                        "flowinfo": 0,
+                        "scope_id": 0,
+                        "network_prefix": 128
+                    }
+                ]
+            }, {
+                "name": "enp0s18",
+                "index": 3,
+                "enabled": true,
+                "auto": true,
+                "default": true,
+                "ipv4": [{
+                        "address": "192.168.1.113",
+                        "network_prefix": 24
+                    }
+                ],
+                "ipv6": []
+            }, {
+                "name": "docker0",
+                "index": 5,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [{
+                        "address": "172.17.0.1",
+                        "network_prefix": 16
+                    }
+                ],
+                "ipv6": [{
+                        "address": "fe80::42:2ff:fe23:b9cb",
+                        "flowinfo": 0,
+                        "scope_id": 5,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "hassio",
+                "index": 6,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [{
+                        "address": "172.30.32.1",
+                        "network_prefix": 23
+                    }
+                ],
+                "ipv6": [{
+                        "address": "fe80::42:f5ff:fe6b:a88e",
+                        "flowinfo": 0,
+                        "scope_id": 6,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "veth3915ada",
+                "index": 8,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::30b6:d6ff:feb7:eafe",
+                        "flowinfo": 0,
+                        "scope_id": 8,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "veth7e21b7a",
+                "index": 10,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::4cf:86ff:fea2:183d",
+                        "flowinfo": 0,
+                        "scope_id": 10,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "vethc055c09",
+                "index": 12,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::7c15:5cff:fe3e:7c52",
+                        "flowinfo": 0,
+                        "scope_id": 12,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "vethb16f913",
+                "index": 14,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::5cb6:2bff:fec1:4430",
+                        "flowinfo": 0,
+                        "scope_id": 14,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "vethe9244bd",
+                "index": 16,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::4897:60ff:fe4a:df52",
+                        "flowinfo": 0,
+                        "scope_id": 16,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "vethabd49f3",
+                "index": 22,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::d425:7eff:fe77:aeda",
+                        "flowinfo": 0,
+                        "scope_id": 22,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "veth34fd4d3",
+                "index": 24,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::2029:feff:fe63:7008",
+                        "flowinfo": 0,
+                        "scope_id": 24,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "veth5ec8201",
+                "index": 26,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::44b:10ff:fe74:ad96",
+                        "flowinfo": 0,
+                        "scope_id": 26,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "vethfc5fe7f",
+                "index": 28,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::8cc9:71ff:fe5f:8aea",
+                        "flowinfo": 0,
+                        "scope_id": 28,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "vetha25a7a4",
+                "index": 32,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::9c9e:6bff:feba:8803",
+                        "flowinfo": 0,
+                        "scope_id": 32,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "veth2d8249b",
+                "index": 34,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::bc81:23ff:fe6b:3a41",
+                        "flowinfo": 0,
+                        "scope_id": 34,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "veth71cdf91",
+                "index": 36,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::6c8c:4aff:fe5e:2b93",
+                        "flowinfo": 0,
+                        "scope_id": 36,
+                        "network_prefix": 64
+                    }
+                ]
+            }, {
+                "name": "veth4cf89ab",
+                "index": 38,
+                "enabled": false,
+                "auto": false,
+                "default": false,
+                "ipv4": [],
+                "ipv6": [{
+                        "address": "fe80::6cff:7cff:fe0c:e6f5",
+                        "flowinfo": 0,
+                        "scope_id": 38,
+                        "network_prefix": 64
+                    }
+                ]
+            }
+        ],
+        "configured_adapters": []
+    }
+}

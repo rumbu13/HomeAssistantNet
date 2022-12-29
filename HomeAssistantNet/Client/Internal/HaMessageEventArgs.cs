@@ -1,4 +1,4 @@
-﻿namespace HomeAssistantNet.Client.Internal;
+﻿namespace HomeAssistantNet.Client;
 
 internal sealed class HaMessageEventArgs : EventArgs
 {
@@ -10,6 +10,4 @@ internal sealed class HaMessageEventArgs : EventArgs
     }
 
     public HaMessage? Message { get; internal set; }
-
-
 }

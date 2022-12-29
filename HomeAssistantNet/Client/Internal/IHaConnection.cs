@@ -2,8 +2,8 @@
 
 internal interface IHaConnection : IDisposable
 {
-    Task StartAsync(Uri uri, CancellationToken cancellationToken);
-    Task StopAsync(CancellationToken cancellationToken);
+    Task ConnectAsync(Uri uri, CancellationToken cancellationToken);
+    Task CloseAsync(CancellationToken cancellationToken);
     Task SendAsync<T>(T message, CancellationToken cancellationToken);
     Task<T?> ReceiveAsync<T>(CancellationToken cancellationToken);
 

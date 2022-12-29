@@ -1,0 +1,51 @@
+{
+    "id": 7,
+    "type": "result",
+    "success": true,
+    "result": [{
+            "id": "91f7d7c09bef4b50b4615ac354b7cbac",
+            "client_id": "http://ha:8123/",
+            "client_name": null,
+            "client_icon": null,
+            "type": "normal",
+            "created_at": "2022-08-04T14:00:56.837540+00:00",
+            "is_current": false,
+            "last_used_at": "2022-08-04T14:33:20.972537+00:00",
+            "last_used_ip": "192.168.1.197",
+            "auth_provider_type": "homeassistant"
+        }, {
+            "id": "654757b7d8f04d5d901edc6b89974a96",
+            "client_id": "http://ha:8123/",
+            "client_name": null,
+            "client_icon": null,
+            "type": "normal",
+            "created_at": "2022-08-04T14:07:34.341315+00:00",
+            "is_current": false,
+            "last_used_at": "2022-08-04T14:07:34.341458+00:00",
+            "last_used_ip": "192.168.1.197",
+            "auth_provider_type": "homeassistant"
+        }, {
+            "id": "9780bfec4be845de8e1a23f59ba30a96",
+            "client_id": "http://ha:8123/",
+            "client_name": null,
+            "client_icon": null,
+            "type": "normal",
+            "created_at": "2022-08-04T14:15:28.826185+00:00",
+            "is_current": false,
+            "last_used_at": "2022-08-04T14:15:28.826323+00:00",
+            "last_used_ip": "192.168.1.197",
+            "auth_provider_type": "homeassistant"
+        }, {
+            "id": "e3672f3b6369474bb22051fb1a5099ec",
+            "client_id": null,
+            "client_name": "net",
+            "client_icon": null,
+            "type": "long_lived_access_token",
+            "created_at": "2022-08-04T14:29:13.504860+00:00",
+            "is_current": true,
+            "last_used_at": "2022-08-04T14:29:13.505298+00:00",
+            "last_used_ip": null,
+            "auth_provider_type": null
+        }
+    ]
+}
