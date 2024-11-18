@@ -12,7 +12,13 @@ var options = new HaClientOptionsBuilder()
     .WithToken("<PUT YOUR TOKEN HERE>");
 
 //create a client
-var client = new HaClient();
+var client = new IHaClient.CreateDefault();
+
+//get a list of areasa
+var areas = await client.GetAreasAsync();
+
+//get some states
+var states = await client.GetStatesAsync();
 
 //what happens when we receive something
 client.EventReceived += (sender, args)
@@ -23,6 +29,9 @@ await client.StartAsync(options);
 
 //subscribe to all events
 await client.SubscribeToEventsAsync();
+
+
+
 
 Console.ReadKey();
 await client.StopAsync();
