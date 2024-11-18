@@ -14,7 +14,7 @@ var options = new HaClientOptionsBuilder()
 //create a client
 var client = new IHaClient.CreateDefault();
 
-//get a list of areasa
+//get a list of areas
 var areas = await client.GetAreasAsync();
 
 //get some states
