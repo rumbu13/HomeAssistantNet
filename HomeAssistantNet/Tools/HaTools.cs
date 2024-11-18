@@ -1,8 +1,4 @@
-﻿using HomeAssistantNet.Api;
-using HomeAssistantNet.Json;
-using Microsoft.Extensions.Logging;
-using System.Collections.Concurrent;
-using System.Diagnostics;
+﻿using HomeAssistantNet.Json;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;

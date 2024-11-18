@@ -43,6 +43,7 @@ public class MainWorker : BackgroundService
             => Interlocked.Increment(ref messageCount);
 
         await haClient.StartAsync(options);
+        await haClient.SubscribeToEventsAsync();
 
         await base.StartAsync(cancellationToken);
 
@@ -52,8 +53,8 @@ public class MainWorker : BackgroundService
     {
         while (!stoppingToken.IsCancellationRequested && haClient.IsRunning)
         {
-            logger.LogInformation("System uptime is {uptime}, {msgs} messages processed", DateTime.UtcNow - StartedOn, messageCount);
-            await Task.Delay(TimeSpan.FromSeconds(60), stoppingToken);
+            logger.LogInformation("*** System uptime is {uptime}, {msgs} messages processed ***", DateTime.UtcNow - StartedOn, messageCount);
+            await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken);
         }
     }
 

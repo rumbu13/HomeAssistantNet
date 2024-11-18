@@ -10,11 +10,11 @@ public interface IHaClient : IDisposable
     
     Task<TResult?> SendCommandAsync<TResult>(Object value, CancellationToken cancellationToken = default);
 
-    Task<int> SubscribeEventsAsync(string? eventType, CancellationToken cancellationToken = default);   
-    Task<int> SubscribeTriggerAsync(HaTrigger trigger, CancellationToken cancellationToken = default);
-    Task<int> SubscribeSupervisorAsync(CancellationToken cancellationToken = default);
-    Task<int> SubscribeMqttAsync(string topic, CancellationToken cancellationToken = default);
-    Task<int> SubscribeLogbookAsync(DateTime startTime, DateTime? endTime = default,
+    Task<int> SubscribeToEventsAsync(string? eventType = default, CancellationToken cancellationToken = default);   
+    Task<int> SubscribeToTriggerAsync(HaTrigger trigger, CancellationToken cancellationToken = default);
+    Task<int> SubscribeToSupervisorAsync(CancellationToken cancellationToken = default);
+    Task<int> SubscribeToMqttAsync(string topic, CancellationToken cancellationToken = default);
+    Task<int> SubscribeToLogbookAsync(DateTime startTime, DateTime? endTime = default,
         IEnumerable<string>? entityIds = default, IEnumerable<string>? deviceIds = default,
         CancellationToken cancellationToken = default);
 

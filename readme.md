@@ -1,24 +1,32 @@
 # .NET Home Assistant Client
 
-.Net Library for controlling and communicating with Home Assistant. 
-Includes REST API and Websocket API.
+.Net Library for controlling and communicating with Home Assistant through Websocket API.
 
 ## Basic usage
 
 ```csharp
 
-var options = new HaWsClientOptionsBuilder()
+//setting basic options
+var options = new HaClientOptionsBuilder()
     .WithHost("homeassistant")
     .WithToken("<PUT YOUR TOKEN HERE>");
 
-var client = new HaWsClient();
+//create a client
+var client = new HaClient();
 
+//what happens when we receive something
 client.EventReceived += (sender, args)
     => Console.WriteLine($"Event: {args.Event.EventType}");
 
-client.Start(options);
+//start the client
+await client.StartAsync(options);
+
+//subscribe to all events
+await client.SubscribeToEventsAsync();
 
 Console.ReadKey();
-client.Stop();
+await client.StopAsync();
 
 ```
+
+

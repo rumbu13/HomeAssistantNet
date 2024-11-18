@@ -378,27 +378,27 @@ internal sealed class HaClient : IHaClient
     public event EventHandler<HaConnectingEventArgs>? Connecting;
     public event EventHandler<HaEventEventArgs>? EventReceived;
     
-    public Task<int> SubscribeEventsAsync(string? eventType, CancellationToken cancellationToken = default)
+    public Task<int> SubscribeToEventsAsync(string? eventType, CancellationToken cancellationToken = default)
     {
         return SubscribeEventsInternalAsync(eventType, -1, cancellationToken);
     }
     
-    public Task<int> SubscribeTriggerAsync(HaTrigger trigger, CancellationToken cancellationToken = default)
+    public Task<int> SubscribeToTriggerAsync(HaTrigger trigger, CancellationToken cancellationToken = default)
     {
         return SubscribeTriggerInternalAsync(trigger, -1, cancellationToken);
     }
 
-    public Task<int> SubscribeSupervisorAsync(CancellationToken cancellationToken = default)
+    public Task<int> SubscribeToSupervisorAsync(CancellationToken cancellationToken = default)
     {
         return SubscribeSupervisorInternalAsync(-1, cancellationToken);
     }
 
-    public Task<int> SubscribeMqttAsync(string topic, CancellationToken cancellationToken = default)
+    public Task<int> SubscribeToMqttAsync(string topic, CancellationToken cancellationToken = default)
     {
         return SubscribeMqttInternalAsync(topic, -1, cancellationToken);
     }
 
-    public Task<int> SubscribeLogbookAsync(DateTime startTime, DateTime? endTime = default,
+    public Task<int> SubscribeToLogbookAsync(DateTime startTime, DateTime? endTime = default,
         IEnumerable<string>? entityIds = default, IEnumerable<string>? deviceIds = default,
         CancellationToken cancellationToken = default)
     {
@@ -508,6 +508,11 @@ internal sealed class HaClient : IHaClient
             var message = await responseWaiter.Task.WaitAsync(combinedCancellation.Token).ConfigureAwait(false);
 
             ThrowIfError(message);
+
+            if (message!.Result.HasValue)
+            {
+                string s = message.Result.Value.ToString();
+            }
 
             if (message!.Result.HasValue)
                 return message.Result.Value.Deserialize<TResult>(HaTools.DefaultJsonSerializerOptions);
